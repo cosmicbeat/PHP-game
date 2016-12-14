@@ -8,22 +8,23 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>{% block title %}SoftUni Blog{% endblock %}</title>
+    <title>{% block title %}Milky Way Explorer{% endblock %}</title>
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}">
     {% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    <link rel="stylesheet" type="text/css" href="css/customTweek.css">
 </head>
 
-<body id="{% block body_id %}{% endblock %}">
+<body id="{% block body_id %}{% endblock %}" class="bgBody">
 
 {% block header %}
     <header>
         <div class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="{{ path('blog_index') }}" class="navbar-brand">SOFTUNI BLOG</a>
+                    <a href="{{ path('blog_index') }}" class="navbar-brand">Welcome to Milky Way Explorer Game</a>
 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -36,7 +37,7 @@
                         {% if app.user %}
                             <li>
                                 <a href="{{ path('user_profile') }}">
-                                    My Profile
+                                    Play Game
                                 </a>
                             </li>
                             <li>
@@ -76,7 +77,7 @@
 {% block footer %}
     <footer>
         <div class="container modal-footer">
-            <p>&copy; 2016 - Software University Foundation</p>
+
         </div>
     </footer>
 {% endblock %}

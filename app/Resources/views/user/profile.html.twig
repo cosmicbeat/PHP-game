@@ -1,11 +1,14 @@
 {% extends 'base.html.twig' %}
-
 {% block body_id 'profile' %}
-
 {% block main %}
-    <div>
-        {{ user.email }}
-        <br>
-        {{ user.fullName }}
+    <div class="textDec">
+        <!--{{ user.email }} -->
+        Player: {{ user.fullName }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="smallTxt">tip: hover the map to choose a destination</i>
+        <img src="images/milkyWayMap.png" width="1040" height="641" alt="MilkyWay" usemap="#planetmap">
+        <map name="planetmap">
+            <area shape="circle" coords="520,450,40" alt="Solar System" href="sun.htm" title="Solar System and our home Earth">
+            <area shape="circle" coords="430,470,40" alt="Perseus" href="mercur.htm" title="Perseus, Double cluster h & chi">
+            <!--<area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">-->
+        </map>
     </div>
 {% endblock %}

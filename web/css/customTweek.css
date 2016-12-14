@@ -1,0 +1,27 @@
+.bgBody {
+
+    background-color: black;
+
+}
+.panoramaMY {
+    background-image: url(../images/MY.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    /*background-position-x: center;*/
+    height: 483px;
+    width: 1366px;
+    margin-left: -120px;
+}
+.textDec {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+.textFormat {
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+}
+.smallTxt {
+    font-size: 14px;
+}
